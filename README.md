@@ -1,2 +1,2 @@
-# newtab
-Build up your vocabulary with every new tab opened.
+# newstab
+Get the latest trending news articles each time you open a new tab
