@@ -1,0 +1,27 @@
+{
+    "name": "News Tab",
+    "version": "1.0",
+    "description": "New tab, news tab. Stay updated on current events in the US.",
+    "permissions": ["tabs"],
+    "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+    },
+    "background": {
+      "scripts": ["javascript.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_icon": {
+        "16": "newTabFavicon.png",
+        "32": "newTabFavicon.png",
+        "42": "newTabFavicon.png"
+      }
+    },
+    "icons": {
+      "16": "newTabFavicon.png",
+      "32": "newTabFavicon.png",
+      "42": "newTabFavicon.png",
+      "128": "newTabFavicon.png"
+    },
+    "manifest_version": 2
+}

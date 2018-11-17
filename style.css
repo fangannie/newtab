@@ -1,0 +1,101 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  background-image: url('tabBackground.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+img {
+  padding-top: 30px;
+  width: 100%;
+}
+
+[id='1'], [id='2'], [id='3']{
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  flex:1;
+  padding:3em;
+  background-color: rgb(210,201,241,0.35);
+  background-image: linear-gradient(rgb(210,201,241,0.6), rgb(0,191,255,0.2));
+  background-blend-mode:color;
+  border-radius: 12px;
+  margin-left: 20px;
+  margin-right:20px;
+  overflow: scroll;
+}
+
+[id='1']:hover, [id='2']:hover, [id='3']:hover,
+[id='1']:focus, [id='2']:focus, [id='3']:focus,
+[id='1']:active, [id='2']:active, [id='3']:active{
+  transform: scale(1.1);
+  background-color: rgb(210,201,241);
+  background-image: linear-gradient(rgb(93, 76, 228), rgb(0,191,255,0.7));
+  background-blend-mode:color;
+}
+
+#dateDisplay {
+  padding-top: 25px;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+#dateDisplay:hover{
+  transform: scale(1.1);
+}
+
+#timeDisplay {
+  font-size: 80px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  margin-top: 20px;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+#timeDisplay:hover{
+  transform: scale(1.1);
+}
+
+#news {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+}
